@@ -26,7 +26,7 @@ export default class InstabilityRecordController {
           .where({ alreadyNotified: false })
           .update({ alreadyNotified: true });
       } else {
-        res.status(204).json({ message: 'Não há novas instabilidades!' });
+        res.json({ message: 'Não há novas instabilidades!' });
       }
     } catch (error) {
       res.json({ error });

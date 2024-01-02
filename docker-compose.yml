@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  api:
+    environment:
+      - DATABASE_URL=postgresql://postgres:B.lralves@141910*@db.tlrkcxpnqhuoxmtmpmym.supabase.co:5432/postgres
+    container_name: web-api-monitor-tecnospeed
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3033:3033'
