@@ -1,0 +1,20 @@
+# Node.js
+node_modules/
+
+# TypeScript
+*.js
+*.js.map
+*.d.ts
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+.prettiercache
+
+# VS Code
+.vscode/
+
+# Outros
+dist/
